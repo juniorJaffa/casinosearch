@@ -1,0 +1,14 @@
+{
+  "markers": [
+    {
+      "name": "Olympic Casino Bratislava, Carlton",
+      "address": "Hviezdoslavovo námestie 3, (Hotel Carlton)",
+      "position": [48.14143788944112, 17.108613893253427]
+    },
+    {
+      "name": "Olympic Casino Bratislava, Eurovea",
+      "address" : "Pribinova 8, Bratislava",
+      "location": [48.14057591384127, 17.12373869843766]
+    }
+  ]
+}
