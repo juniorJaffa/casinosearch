@@ -66,7 +66,7 @@ function loadMap() {
       });
     
     
-      // Olympic Casino Bratislava, Eurovea
+   d   // Olympic Casino Bratislava, Eurovea
       // Pribinova 8
       var marker2Data = jsonData.markers[1];
       marker2 = new google.maps.Marker({
