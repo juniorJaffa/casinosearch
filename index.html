@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CasinoSearch Google Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM7BJW0HCNZjbzUc-Zm_Cj8_K_2I7YYfs&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
+<head>
+  <title>CasinoSearch Google Map</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM7BJW0HCNZjbzUc-Zm_Cj8_K_2I7YYfs&callback=initMap&libraries=&v=weekly"
+    defer></script>
 
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css"> -->
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://www.casinosearch.sk/assets/stylesheets/bootstrap.min.css">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css"> -->
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="./index.js"></script>
-  </head>
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
 
-  <body>
-    <div id="map"></div>
-  </body>
-  
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div id="map"></div>
+  <!-- Modal1 -->
+  <div class="modal fade mapPointModal" id="mapPointDetail" tabindex="-1" role="dialog" style="display: none;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Olympic Casino Bratislava, Eurovea</h2>
+          <div class="btnArrow"><button type="button" class="btn" data-dismiss="modal"></button></div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <div class="position-relative mapPointPhoto">
+                <div class="vCenterImageBox">
+                  <div>
+                    <picture>
+                      <source
+                        srcset="https://api.olympic-casino.sk/sites/default/files/styles/ims_vertical_cards_desktop/public/2020-10/OCS-web---taser-872-x-540px-eurovea-02.jpg"
+                        type="image/jpeg" width="300" height="200"><img
+                        src="https://api.olympic-casino.sk/sites/default/files/styles/ims_vertical_cards_desktop/public/2020-10/OCS-web---taser-872-x-540px-eurovea-02.jpg"
+                        type="image/jpeg" width="300" height="200 alt=" "="" title="" class=" vCenterImage">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">Hviezdoslavovo nÃ¡mestie 185/3,<br>81102 Bratislava</div>
+          </div>
+        </div>
+        <div class="modal-footer pb-4 btnMiddleRight">
+          <div class="btnRow w-100 pb-3 pb-md-1 d-flex"><a class="btn btn-secondary"
+              href="geo:0,0?q=Olympic+Casino+Bratislava" role="button">Naviguj</a><a class="btn btn-primary" href="#"
+              role="button">Detail kasÃ­na</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
