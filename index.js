@@ -87,19 +87,22 @@ function loadMap() {
         content: modalContent1,
       });
     
-      marker1.addListener("click", toggleBounce);
+      //marker1.addListener("click", toggleBounce);
       google.maps.event.addListener(marker1, "click", () => {
         //infowindow1.open(map, marker1);
-        $('#mapPointDetail').html(modalContent1);
-        $('#mapPointDetail').modal('show');
+        $('#mapPointDetail1').html(modalContent1);
+        $('#mapPointDetail1').modal('show');
       });
 
       const infowindow2 = new google.maps.InfoWindow({
         content: modalContent2,
       });
-      marker2.addListener("click", toggleBounce);
+
+      //marker2.addListener("click", toggleBounce);
       google.maps.event.addListener(marker2, "click", () => {
-        infowindow2.open(map, marker2);
+        //infowindow2.open(map, marker2);
+        $('#mapPointDetail2').html(modalContent2);
+        $('#mapPointDetail2').modal('show');
       });
 }
 
@@ -154,44 +157,44 @@ var modalContent1 =
                     +'</div>'
                 +'</div>'
             +'</div>'
-        +'</div>'
-    +'</div>';
+        +'</div>';
+    //+'</div>';
 
 // Eurovea
 var modalContent2 = 
-    '<div class="modal fade mapPointModal" id="mapPointDetail" tabindex="-1" role="dialog">'
-    +'<div class="modal-dialog" role="document">'
-        +'<div class="modal-content">'
-            +'<div class="modal-header">'
-                +'<h2 class="modal-title">Olympic Casino Bratislava, Eurovea</h2>'
-                +'<div class="btnArrow">'
-                    +'<button type="button" class="btn" data-dismiss="modal"></button>'
-                +'</div>'
+    //'<div class="modal fade mapPointModal" id="mapPointDetail" tabindex="-1" role="dialog">'
+    '<div class="modal-dialog" role="document">'
+    +'<div class="modal-content">'
+        +'<div class="modal-header">'
+            +'<h2 class="modal-title">Olympic Casino Bratislava, Eurovea</h2>'
+            +'<div class="btnArrow">'
+                +'<button type="button" class="btn" data-dismiss="modal"></button>'
             +'</div>'
-            +'<div class="modal-body">'
-                +'<div class="row">'
-                    +'<div class="col-6">'
-                        +'<div class="position-relative mapPointPhoto">'
-                            +'<div class="vCenterImageBox">'
-                                +'<div>'
-                                    +'<picture>'
-                                        +'<source srcset="https://api.olympic-casino.sk/sites/default/files/styles/ims_vertical_cards_desktop/public/2020-10/OCS-web---taser-872-x-540px-eurovea-02.jpg" type="image/jpeg" width="300" height="200">'
-                                        
-                                        +'<img src="https://api.olympic-casino.sk/sites/default/files/styles/ims_vertical_cards_desktop/public/2020-10/OCS-web---taser-872-x-540px-eurovea-02.jpg" type="image/jpeg" width="300" height="200 alt="" title="" class="vCenterImage">'
-                                    +'</picture>'
-                                +'</div>'
+        +'</div>'
+        +'<div class="modal-body">'
+            +'<div class="row">'
+                +'<div class="col-6">'
+                    +'<div class="position-relative mapPointPhoto">'
+                        +'<div class="vCenterImageBox">'
+                            +'<div>'
+                                +'<picture>'
+                                    +'<source srcset="https://api.olympic-casino.sk/sites/default/files/styles/ims_vertical_cards_desktop/public/2020-10/OCS-web---taser-872-x-540px-eurovea-02.jpg" type="image/jpeg" width="300" height="200">'
+                                    
+                                    +'<img src="https://api.olympic-casino.sk/sites/default/files/styles/ims_vertical_cards_desktop/public/2020-10/OCS-web---taser-872-x-540px-eurovea-02.jpg" type="image/jpeg" width="300" height="200 alt="" title="" class="vCenterImage">'
+                                +'</picture>'
                             +'</div>'
                         +'</div>'
                     +'</div>'
-                    +'<div class="col-6">Hviezdoslavovo námestie 185/3,<br>81102 Bratislava</div>'
                 +'</div>'
+                +'<div class="col-6">Pribinova 8,<br>81102 Bratislava</div>'
             +'</div>'
-            +'<div class="modal-footer pb-4 btnMiddleRight">'
-                +'<div class="btnRow w-100 pb-3 pb-md-1 d-flex">'
-                    +'<a class="btn btn-secondary" href="geo:0,0?q=Olympic+Casino+Bratislava" role="button">Naviguj</a>'
-                    +'<a class="btn btn-primary" href="#" role="button">Detail kasína</a>'
-                +'</div>'
+        +'</div>'
+        +'<div class="modal-footer pb-4 btnMiddleRight">'
+            +'<div class="btnRow w-100 pb-3 pb-md-1 d-flex">'
+                +'<a class="btn btn-secondary" href="geo:0,0?q=Olympic+Casino+Bratislava" role="button">Naviguj</a>'
+                +'<a class="btn btn-primary" href="#" role="button">Detail kasína</a>'
             +'</div>'
         +'</div>'
     +'</div>'
-    +'</div>';
++'</div>';
+//+'</div>';
