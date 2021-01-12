@@ -51,6 +51,7 @@ function loadMap() {
           icon: './img/point-gaminghouse.svg'
         })
 
+        // replace %s
         let outhtml =  modalContentTemplete.log(mark.name, mark.address, mark.psc+' '+mark.city, mark.address, mark.url);
         console.log('>outhtml: '+outhtml);
 
