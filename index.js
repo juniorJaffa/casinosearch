@@ -123,7 +123,6 @@ function toggleBounce() {
 
 // Carlton
 var modalContent1 = 
-    //'<div class="modal fade mapPointModal" id="mapPointDetail" tabindex="-1" role="dialog">'
         '<div class="modal-dialog" role="document">'
             +'<div class="modal-content">'
                 +'<div class="modal-header">'
@@ -158,11 +157,9 @@ var modalContent1 =
                 +'</div>'
             +'</div>'
         +'</div>';
-    //+'</div>';
 
 // Eurovea
 var modalContent2 = 
-    //'<div class="modal fade mapPointModal" id="mapPointDetail" tabindex="-1" role="dialog">'
     '<div class="modal-dialog" role="document">'
     +'<div class="modal-content">'
         +'<div class="modal-header">'
@@ -197,4 +194,3 @@ var modalContent2 =
         +'</div>'
     +'</div>'
 +'</div>';
-//+'</div>';
