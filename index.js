@@ -53,7 +53,7 @@ function loadMap() {
 
         // replace %s
         let outhtml =  modalContentTemplete.log(mark.name, mark.address, mark.psc+' '+mark.city, mark.address, mark.url);
-        console.log('>outhtml: '+outhtml);
+        //console.log('>outhtml: '+outhtml);
 
         google.maps.event.addListener(marker, "click", () => {
             $('#mapPointDetail'+mark.id).html(outhtml);
