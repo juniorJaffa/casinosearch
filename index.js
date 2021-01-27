@@ -4,6 +4,7 @@
 // in place of a google.maps.LatLng object.
 let map;
 var jsonData;
+var mapOptionsData;
 var marker1;
 var marker2;
 
@@ -32,7 +33,21 @@ function loadData() {
    });         
 }
 
+function loadMapOptions() {
+    $.getJSON( "mapoptions.json", function(obj) {
+        mapOptionsData = obj;
+        console.log("mapOptionsData: "+mapOptionsData);
+        for(opt of mapOptionsData.mapOptions) {
+            console.log("opt code: "+opt.loc_code);
+            console.log("opt zoom: "+opt.zoom);
+            console.log("opt center: "+opt.center);
+        }
+    });
+}
+
 function loadMap() {
+
+    let opt = loadMapOptions();
 
       const mapOptions = {
         zoom: 14,
